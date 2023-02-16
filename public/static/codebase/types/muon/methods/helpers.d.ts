@@ -1,0 +1,22 @@
+import { mathArgument, maybeNumber, cellValue } from "../types";
+export declare const ERRORS: {
+    null: string;
+    div0: string;
+    value: string;
+    ref: string;
+    name: string;
+    num: string;
+    na: string;
+    data: string;
+};
+export declare function dayOfTheYear(date: Date): number;
+export declare function getJsDateFromExcel(excelDate: number): Date;
+export declare function getExcelDateFromJs(jsDate: Date): number;
+export declare function _to_number(v: string | number | boolean): maybeNumber;
+export declare function _combine(data: mathArgument[]): cellValue[];
+export declare function _isEmpty(text: cellValue): boolean;
+export declare function boolean2str(bool: boolean): string;
+export declare function val2boolean(val: string | number | boolean): boolean;
+export declare function _to_date(d: cellValue): Date;
+export declare function numberOrError(v: cellValue): number;
+export declare function convertToNotation(num: cellValue, places: cellValue, left: number, right: number, notation: number): string;

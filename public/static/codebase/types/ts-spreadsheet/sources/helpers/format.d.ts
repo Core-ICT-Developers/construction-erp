@@ -1,0 +1,11 @@
+import { CellFormats, IFormats, ISpreadsheet } from "../types";
+export declare function getDefaultFormats(): IFormats[];
+export declare function getFormat(id: string): IFormats;
+export declare function isNumeric(val: any): boolean;
+export declare function initFormat(spreadsheet: ISpreadsheet, dateFormat?: string, timeFormat?: number): void;
+export declare function getDefaultFormatsMap(): {};
+export declare function getPureNumber(val: string): number;
+export declare function getCleanValue(val: string): string;
+export declare function getUnformattedValue(val: any, format: CellFormats): any;
+export declare function detectCellFormat(val: any): CellFormats;
+export declare function getFormattedValue(val: any, format: IFormats): string;
